@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,6 +30,10 @@ namespace AulaAPS
         public override double CalcularPerimetro()
         {
             return ((_base * 2) + (altura * 2));
+        }
+        public override string ToString()
+        {
+            return $"Retângulo ({_base}, {altura})";
         }
     }
 }
